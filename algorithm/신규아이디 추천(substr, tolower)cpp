@@ -1,7 +1,7 @@
 //2021 KAKAO BLIND RECRUITMENT
-//¾ÆÀÌµğ¸¦ ÀÔ·Â¹Ş°í ±ÔÄ¢¿¡ µû¶ó »õ·Î¿î ¾ÆÀÌµğ Ãâ·Â
-// ** tolower(str[i])  :¼Ò¹®ÀÚ º¯È¯ ¸Ş¼Òµå
-// ** str.substr(start_index, length) : start_indexºÎÅÍ length±æÀÌ¸¸Å­ string ÀÚ¸£±â 
+//ì•„ì´ë””ë¥¼ ì…ë ¥ë°›ê³  ê·œì¹™ì— ë”°ë¼ ìƒˆë¡œìš´ ì•„ì´ë”” ì¶œë ¥
+// ** tolower(str[i])  :ì†Œë¬¸ì ë³€í™˜ ë©”ì†Œë“œ
+// ** str.substr(start_index, length) : start_indexë¶€í„° lengthê¸¸ì´ë§Œí¼ string ìë¥´ê¸° 
 #include <string>
 #include <vector>
 
@@ -12,8 +12,8 @@ string solution(string new_id) {
     string temp = "";
     for (int i = 0; i < new_id.size(); i++)
     {
-        new_id[i] = tolower(new_id[i]);//1´Ü°è
-        //2´Ü°è
+        new_id[i] = tolower(new_id[i]);//1ë‹¨ê³„
+        //2ë‹¨ê³„
         if (new_id[i] == '-' || new_id[i] == '_' || new_id[i] == '.' || (new_id[i] >= '0' && new_id[i] <= '9') ||
             (new_id[i] >= 'a' && new_id[i] <= 'z')) {
             temp += new_id[i];
